@@ -29,7 +29,7 @@ pipeline {
          stage ('Final Stage') {
             steps {
                 withMaven(maven : 'maven_3_5_0') {
-                    sh 'mvn deploy'
+                    echo "Ended"
                 }
             }
         }
